@@ -1,7 +1,7 @@
 # Algorithm-Daily
 由于本人很懒，能力有限，欢迎提PR，让commit继续飞
 
-
+  <br />
 
 **以下题目来自[菲麦前端的小密圈](http://www.jianshu.com/p/fde6de3412f6)分享：**
 
@@ -10,9 +10,7 @@
 3. 后续更新...
 
 
-  
-
-
+  <br />
 
 
 ### 贡献List：
@@ -25,9 +23,7 @@
 -  (这个车位在等你...快上车)
 
 
-  
-
-
+  <br />
 
 [**MIT License**](/LICENSE)  
 
