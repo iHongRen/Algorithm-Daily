@@ -1,0 +1,29 @@
+#### 1题：9999个数字中只有一个数字是唯一的，其他的数字都是成双的，请找出这个数字。
+
+例如：[1,1,3,4,5,999,3,5,4,6,6]中这个唯一的数字是999
+
+  
+
+题解1. by [@iHongRen](https://github.com/iHongRen)
+
+利用[异或(^)](https://msdn.microsoft.com/zh-SG/library/3akey979.aspx)的特点：
+
+**任何数异或自己=0**（5^5 = 0）
+
+**任何数异或0=任何数**（5^0 = 5）
+
+对这组数字进行一遍相互异或，那些成双的数字异或后都为0，最后得到的就是那个唯一的数字。
+
+```c
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+	int arr[11] = {1,1,3,4,5,999,3,5,4,6,6};
+	int num = arr[0];
+	for (int i=1;i<11;i++) {
+		num ^= arr[i];
+	}
+	printf("%d\n",num);  //999
+	return 0;
+}
+```
